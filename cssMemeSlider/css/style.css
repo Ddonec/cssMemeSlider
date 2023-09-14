@@ -1,0 +1,33 @@
+* {
+  position: static;
+}
+
+img {
+  height: 400px;
+  width: 300px;
+}
+.mem-line {
+  display: flex;
+  transition: all 0.5s;
+  overflow: hidden;
+  width: 100%;
+}
+/* 
+.slides{
+margin: 0 auto;
+} */
+
+/* Механизм */
+
+#n2:checked ~ .mem-line {
+  margin-left:-300px;
+}
+
+#n3:checked ~ .mem-line {
+  margin-left:-600px;
+}
+
+#n4:checked ~ .mem-line {
+  margin-left: -900px;
+}
+/*  */
