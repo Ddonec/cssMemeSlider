@@ -5,17 +5,40 @@
 img {
   height: 400px;
   width: 300px;
+  margin-bottom: 30px;
+}
+span {
+margin: 0 40%;
+font-size: 20px;
+font-family: 'Times New Roman', Times, serif;
+text-transform: capitalize;
+
 }
 .mem-line {
   display: flex;
   transition: all 0.5s;
-  overflow: hidden;
   width: 100%;
 }
-/* 
-.slides{
-margin: 0 auto;
-} */
+.slider{
+  width: 300px;
+  overflow: hidden;
+  margin: 2% auto;
+}
+.buttons{
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+  display: block;
+}
+.buttons-area{
+  display: flex;
+  gap: 16%;
+  margin-top: 10%;
+}
+
+#n1, #n2, #n3, #n4{
+display: none;
+}
 
 /* Механизм */
 
