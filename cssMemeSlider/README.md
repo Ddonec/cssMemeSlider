@@ -1,0 +1,1 @@
+https://ddonec.github.io/cssMemeSlider/cssMemeSlider/index.html

@@ -178,14 +178,14 @@ body {
   margin-left: -60rem;
 }
 /*  */
-@media (max-width: 500px){
+@media (max-width: 500px) {
   .bt {
     display: flex;
     flex-direction: column-reverse;
     width: 20rem;
     text-align: left;
   }
-.buttons-area{
-  margin: 0 auto;
-}
+  .buttons-area {
+    margin: 0 auto;
+  }
 }
