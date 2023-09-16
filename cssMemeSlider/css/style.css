@@ -1,0 +1,189 @@
+* {
+  position: static;
+}
+
+img {
+  width: 20rem;
+}
+span {
+  font-size: small;
+  text-transform: capitalize;
+}
+section {
+  background: #a0a4a7;
+  width: calc(90vw);
+  margin: 0 auto;
+  border-radius: 1em;
+  padding: 1%;
+  min-width: 23rem;
+}
+body {
+  background: #bdc7cf;
+}
+.mem-line {
+  display: flex;
+  transition: all 0.5s;
+  width: 100%;
+}
+.slider {
+  width: 20rem;
+  /* overflow: hidden; */
+  margin: 2% auto;
+  background: #a0a4a7;
+  text-align: center;
+}
+
+.mem-visible {
+  overflow: hidden;
+}
+.buttons {
+  width: 1em;
+  height: 1em;
+  background-color: #7faae8;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 0.5rem solid #a0a4a7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons:hover p {
+  margin: 0;
+  padding: 0;
+  width: 65%;
+  height: 65%;
+  background-color: #e7e1e1fb;
+  border-radius: 50%;
+  border: 0.2rem solid #e7e1e1fb;
+}
+.buttons-area {
+  display: flex;
+  width: 40%;
+  align-items: flex-end;
+  background-color: #a0a4a7;
+  z-index: 2;
+}
+.titles {
+  width: 60%;
+  display: flex;
+}
+.titles div {
+  flex-shrink: 0;
+  width: 20rem;
+  opacity: 0;
+  height: 2rem;
+  line-height: 2rem;
+}
+.b-hover {
+  cursor: pointer;
+}
+.bt {
+  display: flex;
+  width: 20rem;
+  text-align: left;
+}
+
+#n1,
+#n2,
+#n3,
+#n4 {
+  display: none;
+}
+#n1:checked ~ .bt .buttons-area label[for="n1"] p {
+  margin: 0;
+  padding: 0;
+  width: 65%;
+  height: 65%;
+  background-color: #6666cb86;
+  border-radius: 50%;
+  border: 0.2rem solid #7faae8;
+  background-color: #242726;
+}
+#n1:checked ~ .bt .buttons-area label[for="n1"]:hover p {
+  border: 0.2rem solid #fff;
+}
+#n2:checked ~ .bt .buttons-area label[for="n2"] p {
+  margin: 0;
+  padding: 0;
+  width: 65%;
+  height: 65%;
+  background-color: #6666cb86;
+  border-radius: 50%;
+  border: 0.2rem solid #7faae8;
+  background-color: #242726;
+}
+#n2:checked ~ .bt .buttons-area label[for="n2"]:hover p {
+  border: 0.2rem solid #fff;
+}
+#n3:checked ~ .bt .buttons-area label[for="n3"] p {
+  margin: 0;
+  padding: 0;
+  width: 65%;
+  height: 65%;
+  background-color: #6666cb86;
+  border-radius: 50%;
+  border: 0.2rem solid #7faae8;
+  background-color: #242726;
+}
+
+#n3:checked ~ .bt .buttons-area label[for="n3"]:hover p {
+  border: 0.2rem solid #fff;
+}
+#n4:checked ~ .bt .buttons-area label[for="n4"] p {
+  margin: 0;
+  padding: 0;
+  width: 65%;
+  height: 65%;
+  background-color: #6666cb86;
+  border-radius: 50%;
+  border: 0.2rem solid #7faae8;
+  background-color: #242726;
+}
+#n4:checked ~ .bt .buttons-area label[for="n4"]:hover p {
+  border: 0.2rem solid #fff;
+}
+#n4:checked ~ .bt .titles #t4 {
+  opacity: 1;
+  margin-left: -60rem;
+  transition: opacity 2s;
+}
+#n3:checked ~ .bt .titles #t3 {
+  opacity: 1;
+  margin-left: -40rem;
+  transition: opacity 2s;
+}
+#n2:checked ~ .bt .titles #t2 {
+  opacity: 1;
+  margin-left: -20rem;
+  transition: opacity 2s;
+}
+#n1:checked ~ .bt .titles #t1 {
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+/* Механизм */
+
+#n2:checked ~ .mem-line {
+  margin-left: -20rem;
+}
+
+#n3:checked ~ .mem-line {
+  margin-left: -40rem;
+}
+
+#n4:checked ~ .mem-line {
+  margin-left: -60rem;
+}
+/*  */
+@media (max-width: 500px) {
+  .bt {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 20rem;
+    text-align: left;
+  }
+  .buttons-area {
+    margin: 0 auto;
+  }
+}
